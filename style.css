@@ -1,0 +1,348 @@
+:root{
+    --main-font:'Rozha One', serif;
+    --sub-font:'Raleway', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small  */
+@media (min-width: 768px) {
+    .container{
+        width: 500px;
+    }
+}
+
+/* medium  */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+/* large  */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* start landing */
+.landing .container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    ". . img img img img img img . . . .";
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+}
+.landing .image{
+    grid-area: img;
+}
+.landing h1{
+    font-family: var(--main-font);
+    font-size: 72px;
+    font-weight: 500;
+    position: absolute;
+    top: 33%;
+    left: 52%;
+    
+}
+.landing p{
+    font-family: var(--sub-font);
+    position: absolute;
+    top: 50%;
+    left: 61%;
+    width: 320px;
+}
+/* end landing */
+/* start our love */
+.love{
+    background-color: #f5f4fb;
+    height: 80vh;
+}
+.love .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    padding: 20px;
+
+}
+.love .container .love-text{
+    width: 33%;
+}
+.love .container .love-text h2{
+    font-size: 44px;
+    font-family: var(--main-font);
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+.love .container .love-text p{
+    font-family: var(--sub-font);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* end our love */
+/* start menu */
+.menu{
+    background-color: #ffffef;
+    
+}
+.menu .container{
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+}
+.menu .container h2{
+    padding: 4rem 0 2rem;
+    font-size: 44px;
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+.menu .container h2+p{
+    line-height: 1.7;
+    width: 365px;
+    padding: 0 0 4rem;
+    font-family: var(--sub-font);
+}
+.menu .container .menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    width: 100%;
+    gap: 20px;
+
+}
+.menu .menu-grid .card{
+    padding: 20px;
+}
+.menu .menu-grid .card h4{
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.menu .menu-grid .card p{
+    font-family: var(--sub-font);
+    padding-bottom: 2rem;
+}
+.menu .menu-grid .card span{
+    font-family: var(--sub-font);
+    padding-bottom: 4rem;
+
+}
+/* end menu */
+/* start taste */
+.taste .container{
+    margin: auto;
+    text-align: center;
+    padding: 7rem 0;
+}
+.taste .container .taste-text{
+    padding: 0 0 6rem;
+    width: 434px;
+    margin: auto;
+}
+.taste .container .taste-text h2{
+    font-size: 44px;
+    font-family: var(--main-font);
+    font-weight: 600;
+}
+.taste .container .taste-text p{
+    font-family: var(--sub-font);
+    line-height: 1.7;
+    padding-top: 2rem;
+}
+.taste .image {
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+   gap: 30px;
+
+}
+.taste .image img{
+    width: 100%;
+    padding: 0 1rem;
+}
+/* end taste */
+/* start contact */
+.contact .container{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top:4rem;
+    padding-bottom: 6rem;
+}
+.contact .contact-text{
+    padding: 0 0 6rem;
+    width: 434px;
+    margin: auto;
+}
+.contact  .contact-text h2{
+    font-size: 44px;
+    font-family: var(--main-font);
+    font-weight: 600;
+    
+}
+.contact .contact-text p{
+    font-family: var(--sub-font);
+    line-height: 1.7;
+    padding-top: 2rem;
+}
+.contact .btn button{
+    background-color: #ef717a;
+    color: white;
+    border-radius: 3px;
+    width: 165px;
+    height: 55px;
+    font-family: var(--main-font);
+    border: 1px solid #ef717a;
+    font-size: 20px;
+    margin: 1rem 0;
+}
+.contact .btn button:hover{
+    background-color: #d25e66;
+    cursor: pointer;
+}
+/* end contact */
+/* start img */
+.img{
+    background-image: url(media/image5.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+}
+/* end img */
+/* start info */
+.info{
+    background-color: #f5f4fb;
+    height: 50vh;
+}
+.info .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+}
+.info .container .info-text span{
+    display: block;
+    /* font-size: 20px; */
+    font-family: var(--sub-font);
+}
+/* end info */
+
+
+
+
+/* media */
+@media (max-width: 1200px) {
+   
+ 
+
+}
+
+@media (max-width: 992px) {
+    .landing .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        
+    }
+    .landing .container h1{
+        position: static;
+    }
+    .landing .container p{
+        position: static;
+        margin-bottom: 38px;
+        width: 99%;
+    }
+    .landing .container img{
+        height: auto;
+        width: 528px;
+    }
+    .love .container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .love .image img{
+        width: 100%;
+    }
+    .love .love-text{
+        width: 100% !important;
+    }
+  
+    .taste .image img{
+        margin: 0;
+    }
+    .taste .image{
+        flex-wrap: wrap;
+    }
+    .info .container{
+    flex-direction: column;
+    }
+
+   
+
+
+}
+
+@media (max-width: 768px) {
+    .landing .container img{
+        height: auto;
+        width: 100%;
+    }
+    .menu .container .menu-grid{
+        grid-template-columns: 1fr;
+    }
+    .taste .image img{
+        margin: auto;
+    }
+    .taste .container .taste-text {
+        width: 100%;
+    }
+    .taste .container .taste-text h2{
+        font-size: 30px ;
+    }
+    .taste .container .taste-text{
+        padding: 20px;
+    }
+    .menu .container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .menu .container h2+p{
+        width: 100%;
+    }
+    .landing .container h1{
+        font-size: 50px;
+    }
+    .contact .contact-text{
+        width: 100%;
+        padding: 20px;
+    }
+    .contact .contact-text h2{
+        font-size: 30px;
+    }
+    .info .container{
+        padding: 2rem 1rem;
+        justify-content: space-evenly;
+        }
+
+
+
+    
+}
